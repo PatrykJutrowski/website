@@ -1,0 +1,309 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navigationBar{
+    position: fixed;
+    background: #F5F5F5;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: right;
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.44);
+    margin: 0;
+    padding: 0  ;
+    z-index: 9999;
+}
+
+ul li{
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    margin:20px;
+}
+
+p{
+    font-size: clamp(.9rem, 1vw, 2rem);
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-size: clamp(1.5rem, 3.5vw, 3rem);
+    font-weight: bold;
+}
+
+h2{
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
+    margin: 0;
+    padding: 0;
+}
+.insideHeader button{
+    background: #1d4eff;
+    border: none;
+    padding: 15px 20px;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.insideHeader button:hover{
+    background: rgb(0, 58, 245);
+    transition: 0.5s;
+}
+.header {
+    background-image: url("POLO.jpg");
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 937px;
+}
+
+.insideHeader {
+    width: 50%;
+    margin: 10px;
+    padding: 5px;
+    color: white;
+    opacity: 0;
+    animation: fadeIn 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+img{
+    width: 100%;
+    margin:0 auto;
+}
+.section{
+    text-align: center;
+    position: relative;
+}
+
+.par{
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.section p , h2{
+    margin: 80px 0 40px 0;
+}
+
+.circle{
+    max-width: 200px;
+    background: url("rain.jpg");
+    border: solid 10px white;
+    border-radius: 60%;
+    -webkit-box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.45);
+    position: absolute;
+    padding:0;
+    left: -7rem;
+    top: 4rem;
+}
+
+.modern{
+    padding: 0 10px;
+    display: flex;
+    width: 50%;
+}
+
+.b p{
+    display:flex;
+    font-size:12px;
+    padding:10px;
+}
+h3{
+    margin: 0;
+    padding: 0;
+    font-size: clamp(1rem, 2vw, 1rem);
+    text-indent: 10px;
+}
+
+.polomain{
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.polom{
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items:center;
+
+}
+
+.RecentWork p{
+    font-size: 18px;
+}
+
+.images{
+    margin: 0;
+    padding-left: 0;
+}
+
+.images ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.images li {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+    max-width: 25%;
+}
+
+.images img {
+    margin: 0;
+    padding: 0;
+    transition: transform .4s;
+}
+.images img:hover {
+    transform: scale(1.2);
+}
+
+.centerService{
+    display: flex;
+    flex-direction: column;
+}
+
+.OurBlog{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.item {
+    /* To correctly align image, regardless of content height: */
+    vertical-align: top;
+    display: inline-block;
+    /* To horizontally center images and caption */
+    text-align: center;
+    /* The width of the container also implies margin around the images. */
+    max-width: 450px;
+    margin-left: 15px;
+    font-size: 0;
+}
+
+span {
+    text-align: left;
+    color: #564f4f;
+    background:white;
+    /* Make the caption a block so it occupies its own line. */
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.underBlog{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.centerCLIENTS{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.caption{
+    color: black;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+    .polomain{
+        width: 100%;
+    }
+    .modern{
+        background: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items:center;
+    }
+    .underBlog{
+        text-align: center;
+        display: block;
+    }
+    .parentitems1{
+        display: block;
+        text-align: center;
+    }
+    .images ul li{
+        display: flex;
+        flex-direction: row;
+    }
+    .item{
+        width: 100%;
+        margin: auto;
+        padding: 20px 0 ;
+    }
+    .OurBlog{
+        width: 100%;
+    }
+}
+
+img{
+    font-size: 0;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
